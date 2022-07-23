@@ -157,13 +157,12 @@ hr{
 }
 
 .projects{
-  font-size: 5rem;
-  font-family: 'Sacramento', sans-serif;
   text-decoration: none;
-  color: #28f6e5;
-  width: auto;
-  
-  
+  font-family: 'Montserrat', sans-serif;
+  color: #B983FF;
+  font-size: 3rem;
+  margin: 0;
+  border: 0;
 }
 .projects:hover{
   color: #29c2ad;
