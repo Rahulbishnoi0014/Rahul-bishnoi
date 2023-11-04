@@ -10,32 +10,50 @@ body {
 
 }
 
+.mainbox{
+    background-color: orange;
+    padding-top: 3rem;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+}
+
+.marqueefont1{
+    font-size: 1rem;
+}
+
+
+.rahul{
+    color: rgb(0, 0, 0);
+    font-size: 90px;
+    letter-spacing: 5px;
+    position: relative;
+    bottom: -30px;
+    text-align: center;
+    font-weight:900;
+    /* font-family: 'Bigshot One', serif; */
+
+}
+
+.rahul0{
+    position: absolute;
+    
+    bottom: -150px;
+    left: 30px;
+    font-size: 120px;
+    letter-spacing: 5;
+    color: rgba(0, 0, 0, 0.40);
+
+}
+
+
 code {
     display: flex;
     justify-content: center;
 }
 
-.style1 {
-    animation-name: colorStyle;
-    animation-duration: 5s;
-    color: orange;
-    animation-iteration-count: infinite;
-    transition: 5s;
-}
-
-@keyframes colorStyle {
-    0% {
-        color: orange;
-    }
-
-    50% {
-        color: #000;
-    }
-
-    100% {
-        color: orange;
-    }
-}
 
 
 .worksphere {
@@ -120,51 +138,7 @@ code {
 
 
 
-.admin {
-    color: white;
-    font-size: 100px;
-    /* font-family: 'Amatic SC', cursive; */
-    /* font-family: 'Dancing Script', cursive; */
-    letter-spacing: 5px;
-    font-family: 'Big Shoulders Stencil Display', cursive;
 
-    /* font-family: 'Ms Madi',cursive; */
-    /* font-family: 'Permanent Marker', cursive; */
-    text-align: center;
-    animation-name: myName;
-    animation-duration: 3s;
-    padding: 0;
-    ;
-
-    /* animation-iteration-count: infinite; */
-
-}
-
-@keyframes myName {
-
-    0% {
-        color: rgb(0, 0, 0);
-        transform: rotatey(60deg);
-    }
-
-    50% {
-        color: rgb(255, 255, 255);
-        transform: rotatex(30deg);
-    }
-
-
-
-
-
-    /* 0%{color: rgb(15, 15, 100);transform: rotatey(45deg);}
-    25% {color: rgb(0, 255, 255);transform: rotatex(30deg);}
-    50%{color: rgb(0, 153, 255);transform: rotatey(40deg);}
-    55%{color: blueviolet; transform: scale(1.3);}
-    75%{color: rgb(0, 153, 255);transform: rotatex(-30deg);}
-    100%{color: rgb(0, 0, 0);transform: rotatey(45deg);} 
-    */
-
-}
 
 .box2,
 .item {
@@ -244,26 +218,33 @@ code {
 .adminimg {
     height: 300px;
     /* float: left; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin-top: 20px;
-    box-shadow: 0px 0px 20px 5px rgb(255, 155, 15);
+    box-shadow: 10px 10px orange;
     transition: 0.3s;
 
 
 }
 
 .adminimg:hover {
-    box-shadow: 0px 0px 20px 5px white;
+    box-shadow: 15px 15px  orange;
+    /* transform: scale(1.1); */
 
 }
 
 .abouttxt {
     width: 700px;
     font-size: 2rem;
-    margin-top: 20px;
     padding: 1rem;
     color: rgb(207, 189, 168);
     transition: 0.2s;
+
+
+}
+
+.abouttxt legend{
+    color: orange;
+    font-size: 3rem;
 }
 
 .abouttxt:hover {
@@ -295,6 +276,7 @@ code {
 
     border: 2px solid rgb(0, 0, 0);
     transition: 0.2s;
+    margin-bottom: 2rem;
 }
 
 .social-img:hover {
@@ -423,9 +405,30 @@ code {
         padding: 0px 10px;
     }
 
-    .admin {
-        font-size: 80px;
+    .mainbox{
+        height: 100px;
+        width: 100%;
     }
+    .rahul {
+        font-size: 1.5rem;
+        bottom: 10px;
+    }
+    .rahul0{
+        bottom: -25px;
+        left: 5px;
+        font-size: 20px;
+    }
+    .marqueetext{
+        font-size: 10px;
+        /* top: 10px; */
+        
+    }
+
+
+    .abouttxt{
+        margin-top: 50px;
+    }
+
 
     .socialbox legend {
         
@@ -434,17 +437,17 @@ code {
 
     .worksphere .title1 {
         opacity: 1;
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
     
     .worksphere .title2 {
         opacity: 0.5;
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     
     .worksphere .title3 {
         opacity: 0.2;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     
     }
 
@@ -455,6 +458,7 @@ code {
 
     .alinetxt {
         font-size: 1.2rem;
+        
     }
 
     #footer {
