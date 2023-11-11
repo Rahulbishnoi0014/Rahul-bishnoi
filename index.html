@@ -19,21 +19,61 @@
     <link rel="stylesheet" href="./style.css">
     <title>Rahul Bishnoi</title>
 
+    <script  rel=”preload”>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all elements with the class "alpha"
+            var elements = document.querySelectorAll('.alpha');
+            function toggleClassesOnce() {
+                elements.forEach(function (element, index) {
+                    setTimeout(function () {
+                        element.classList.toggle('alpha1');
+                    }, index * 100); // Adjust the delay as needed
+                });
+
+                // Add a delay before removing the class to allow the transition to complete
+                setTimeout(function () {
+                    elements.forEach(function (element) {
+                        element.classList.remove('alpha1');
+                    });
+                }, elements.length * 200); // Total delay for removal (adjust as needed)
+            }
+
+            // Call the function to toggle classes once
+            toggleClassesOnce();
+        });
+
+    </script>
+
 </head>
 
-<body >
+<body>
     <div class="mainbox">
 
-        <marquee class="marqueetext" direction="right" class="bigfont1" behavior="alternate">
+        <!-- <marquee class="marqueetext" direction="right" class="bigfont1" behavior="alternate">
             R A H U L B I S H N O I R A H U L B I S H N O I R A H U L B I S H N O I
             R A H U L B I S H N O I R A H U L B I S H N O I R A H U L B I S H N O I
             R A H U L B I S H N O I R A H U L B I S H N O I R A H U L B I S H N O I
             R A H U L B I S H N O I R A H U L B I S H N O I R A H U L B I S H N O I
             R A H U L B I S H N O I R A H U L B I S H N O I R A H U L B I S H N O I
             R A H U L B I S H N O I R A H U L B I S H N O I R A H U L B I S H N O I
-        </marquee>
+        </marquee> -->
 
-        <h1 class="rahul">R A H U L B I S H N O I </h1>
+        <div class="rahul">
+            <p id="r" class="alpha">R</p>
+            <p id="a" class="alpha">A</p>
+            <p id="h" class="alpha">H</p>
+            <p id="u" class="alpha">U</p>
+            <p id="l" class="alpha">L</p>
+
+            <br>
+            <p id="b" class="alpha">B</p>
+            <p id="i" class="alpha">I</p>
+            <p id="s" class="alpha">S</p>
+            <p id="hh" class="alpha">H</p>
+            <p id="n" class="alpha">N</p>
+            <p id="o" class="alpha">O</p>
+            <p id="ii" class="alpha">I</p>
+        </div>
         <h1 class="rahul0">R A H U L B I S H N O I</h1>
     </div>
 
@@ -75,6 +115,26 @@
 
         <div class="item">
 
+            <a target="_blank" href="https://github.com/Rahulbishnoi0014/LostAndFound">
+
+                <img class="Pimg" src="./images/lostAndFound.png" alt="P-img">
+
+            </a>
+            <div class="Ptxt">
+
+                <a target="_blank" href="https://github.com/Rahulbishnoi0014/LostAndFound">
+
+                    <h1>Lost And Found</h1>
+                    <p>Embark on a digital quest with our Lost and Found platform. Losing things just got a whole lot
+                        more
+                        interesting—and simple.</p>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="item">
+
             <a target="_blank" href="https://campus-ejs.onrender.com/">
 
                 <img class="Pimg" src="./images/campus.png" alt="P-img">
@@ -85,11 +145,9 @@
                 <a target="_blank" href="https://campus-ejs.onrender.com/">
 
                     <h1>CAMPUS</h1>
-
+                    <p>Dive into the world of anonymous expression with our live platform—share anything, anytime. Your
+                        voice, your story, without the strings attached.(EJS is live)</p>
                 </a>
-
-                <p>A platform where anyone can share anything anonymously with the world. (EJS is live)</p>
-
             </div>
         </div>
 
@@ -105,11 +163,9 @@
                 <a target="_blank" href="https://github.com/Rahulbishnoi0014/speech-to-text">
 
                     <h1>Speech to Text</h1>
-
+                    <p>React wonders: Speak in 5 languages, watch it become text, and one-click copy to clipboard magic.
+                    </p>
                 </a>
-
-                <p>A React application that convert speech to text. Support 5 languages with copy to clipboard
-                    functionality.</p>
 
             </div>
         </div>
@@ -126,9 +182,11 @@
 
             <div class="Ptxt">
                 <a target="_blank" href="https://rahulbishnoi0014.github.io/Live-Weather/">
+                   
                     <h1>LIVE WEATHER</h1>
+                    <p>Experience real-time weather updates with our fully JavaScript-built application,
+                        powered by seamless API integration. Your forecast, at your fingertips.</p>
                 </a>
-                <p>Live weather application,full Js built by use of API.</p>
 
             </div>
 
@@ -143,9 +201,12 @@
 
             <div class="Ptxt">
                 <a target="_blank" href="https://rahulbishnoi0014.github.io/CORONA-INDEX/">
+                    
                     <h1>CORONA INDEX</h1>
+                    <p>Stay informed with our live COVID-19 tracker for India. Crafted during the pandemic using a free
+                        API,
+                        it's your real-time window into the current situation </p>
                 </a>
-                <p>Live corona cases data of India. Built by free API . </p>
             </div>
 
 
@@ -159,7 +220,7 @@
     <div class="quotebox box2">
         <h1>" Endings are merely invitations to <br> craft a new and exciting beginning."</h1>
     </div>
-    
+
     <fieldset id="contact" class="box2 socialbox">
         <legend class="socialboxtxt"> C O N T A C T </legend>
 
