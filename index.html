@@ -51,8 +51,7 @@
             const randomIndex = Math.floor(Math.random() * paragraphs.length);
             const randomParagraph = paragraphs[randomIndex];
 
-            // Remove the 'scaled' class from all paragraphs
-            paragraphs.forEach(p => p.classList.remove('scaled'));
+           
 
             // Add the 'scaled' class to the randomly selected paragraph
             paragraphs.forEach(p => {
@@ -66,6 +65,8 @@
                 randomParagraph.style.color = 'black';
                 randomParagraph.style.backgroundColor = 'orange';
                 randomParagraph.style.transform = 'scale(1.05)';
+                randomParagraph.style.boxShadow="5px 5px 10px rgb(247, 247, 247)";
+                
             }
         }
 
@@ -73,7 +74,7 @@
         randomHover();
 
         // Change positions every 2 seconds
-        setInterval(randomHover, 1500);
+        setInterval(randomHover, 1000);
 
     </script>
 
