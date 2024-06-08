@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Rahul Bishnoi</title>
 
-    <script  rel=”preload”>
+    <script rel=”preload”>
         document.addEventListener("DOMContentLoaded", function () {
             // Get all elements with the class "alpha"
             var elements = document.querySelectorAll('.alpha');
@@ -41,6 +41,39 @@
             // Call the function to toggle classes once
             toggleClassesOnce();
         });
+
+
+
+       
+        function randomHover() {
+            const paragraphs = document.querySelectorAll('.skill');
+            
+            const randomIndex = Math.floor(Math.random() * paragraphs.length);
+            const randomParagraph = paragraphs[randomIndex];
+
+            // Remove the 'scaled' class from all paragraphs
+            paragraphs.forEach(p => p.classList.remove('scaled'));
+
+            // Add the 'scaled' class to the randomly selected paragraph
+            paragraphs.forEach(p => {
+                p.style.color = '';
+                p.style.backgroundColor = '';
+                p.style.transform = '';
+            });
+
+            // Apply styles to the randomly selected paragraph
+            if (randomParagraph) {
+                randomParagraph.style.color = 'black';
+                randomParagraph.style.backgroundColor = 'orange';
+                randomParagraph.style.transform = 'scale(1.05)';
+            }
+        }
+
+        // Initially scale a random paragraph
+        randomHover();
+
+        // Change positions every 2 seconds
+        setInterval(randomHover, 1500);
 
     </script>
 
@@ -86,8 +119,8 @@
         <fieldset class="abouttxt">
             <legend>Rahul Bishnoi</legend>
 
-            Skilled MERN stack developer with expertise in web design and competitive coding with JAVA. 
-            Dive into my projects and GitHub below to explore the seamless integration of MERN technologies, 
+            Skilled MERN stack developer with expertise in web design and competitive coding with JAVA.
+            Dive into my projects and GitHub below to explore the seamless integration of MERN technologies,
             creating a digital symphony of innovation.
 
         </fieldset>
@@ -96,6 +129,29 @@
 
     </div>
     <br><br>
+
+    <div class="skills">
+        <h1>SKILLS</h1>
+        <div class="skillset">
+            <p class="skill">ReactJs</p>
+            <p class="skill">HTML</p>
+            <p class="skill">CSS</p>
+            <p class="skill">JavaScript</p>
+            <p class="skill">Nodejs</p>
+            <p class="skill">MongoDB</p>
+            <p class="skill">ExpressJS</p>
+            <p class="skill">REST API</p>
+            <p class="skill">CURD</p>
+            <p class="skill">EJS</p>
+            <p class="skill">Git</p>
+            <p class="skill">Hosting</p>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+
 
     <div id="mywork" class="Pbox">
 
@@ -125,7 +181,7 @@
 
                     <h1>FITHUB-GYM Management System</h1>
                     <p>
-                        FITHUB streamlines gym operations with features like attendance tracking, 
+                        FITHUB streamlines gym operations with features like attendance tracking,
                         face attendance, fees management, member management, and diet planning.
                     </p>
                 </a>
@@ -165,7 +221,7 @@
                 <a target="_blank" href="https://facevotebyrahul.onrender.com">
 
                     <h1>F A C E V O T E</h1>
-                    <p>FACEVOTE is a delightful project designed to randomly 
+                    <p>FACEVOTE is a delightful project designed to randomly
                         select students for the sheer joy of voting.</p>
                 </a>
 
@@ -221,7 +277,7 @@
 
             <div class="Ptxt">
                 <a target="_blank" href="https://rahulbishnoi0014.github.io/Live-Weather/">
-                   
+
                     <h1>LIVE WEATHER</h1>
                     <p>Experience real-time weather updates with our fully JavaScript-built application,
                         powered by seamless API integration. Your forecast, at your fingertips.</p>
@@ -240,7 +296,7 @@
 
             <div class="Ptxt">
                 <a target="_blank" href="https://rahulbishnoi0014.github.io/CORONA-INDEX/">
-                    
+
                     <h1>CORONA INDEX</h1>
                     <p>Stay informed with our live COVID-19 tracker for India. Crafted during the pandemic using a free
                         API,
@@ -270,7 +326,7 @@
                 alt="github"></a>
         <a target="_blank" href="https://www.linkedin.com/in/rahul-bishnoi-55a855218/"><img class="social-img"
                 src="./images/linkedin.png" alt="linkedin"></a>
-        <a target="_blank" href="./projects/resume.html"><img class="social-img" src="./images/info.png"
+        <a target="_blank" href="./projects/resume2.html"><img class="social-img" src="./images/info.png"
                 alt="resume"></a>
 
 
