@@ -323,6 +323,11 @@ body {
         font-size: 3rem;
     }
 
+
+    .skillset{
+        width: 90%;
+    }
+
     .worksphere .title1 {
         opacity: 1;
         font-size: 2.5rem;
