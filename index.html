@@ -44,36 +44,26 @@
 
 
 
-       
+
         function randomHover() {
             const paragraphs = document.querySelectorAll('.skill');
-            
+
             const randomIndex = Math.floor(Math.random() * paragraphs.length);
             const randomParagraph = paragraphs[randomIndex];
 
-           
-
-            // Add the 'scaled' class to the randomly selected paragraph
-            paragraphs.forEach(p => {
-                p.style.color = '';
-                p.style.backgroundColor = '';
-                p.style.transform = '';
-            });
-
-            // Apply styles to the randomly selected paragraph
             if (randomParagraph) {
                 randomParagraph.style.color = 'black';
+                randomParagraph.style.backgroundColor = 'white';
+                randomParagraph.style.boxShadow = "8px 8px rgb(90, 90, 90)";
+
+                setTimeout(() => {
                 randomParagraph.style.backgroundColor = 'orange';
-                randomParagraph.style.transform = 'scale(1.05)';
-                randomParagraph.style.boxShadow="5px 5px 10px rgb(247, 247, 247)";
-                
+                    
+                    randomParagraph.style.boxShadow = "4px 4px rgb(90, 90, 90)";
+                }, 1000);
+
             }
         }
-
-        // Initially scale a random paragraph
-        randomHover();
-
-        // Change positions every 2 seconds
         setInterval(randomHover, 1000);
 
     </script>
